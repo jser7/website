@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+        /* Define CSS styles for the player data */
+        .section {
+            margin-bottom: 20px;
+            font-size: 18px; /* Adjust font size */
+        }
+
+        h3 {
+            font-size: 24px; /* Adjust font size */
+            margin-bottom: 10px; /* Adjust margin */
+            font-family: system-ui;
+            background: linear-gradient(to right, #21C49F, #F7DB1C); /* Gradient background */
+            -webkit-background-clip: text; /* Clip text to background */
+            background-clip: text; /* Clip text to background */
+            color: transparent; /* Make text transparent */
+            background-size: 25% 100%; /* Set background size to cover 50% of the text width */
+            transition: background-position 0.3s ease; /* Transition background position */
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list-item {
+            margin-bottom: 5px;
+            font-family: system-ui;
+            background: linear-gradient(to right, #2D85F3, #FB62AA); /* Gradient background */
+            -webkit-background-clip: text; /* Clip text to background */
+            background-clip: text; /* Clip text to background */
+            color: transparent; /* Make text transparent */
+            background-size: 85% 100%; /* Set background size to cover 50% of the text width */
+            transition: background-position 0.3s ease; /* Transition background position */
+            font-weight: bold;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body onload="checkPref()">
+    <div class="menu-button-container">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            
+          </div>
+
+        <a href="clashroyale.html"  class="top-menu-button">Clash Royale</b>
+        <a href="clashofclans.html"  class="top-menu-button">Clash of Clans</a>
+        <a href="brawlstars.html"  class="top-menu-button">Brawlstars</b>
+        <a href="aboutus.html" class="top-menu-button">About Us</a>
+    </div>
+    <hr>
+    <div class="clashoc-paragraph-container">
+        <div class="clashoc-image-container">
+            <img src="media_brawlstars_logo.png" class="clashoc-image">
+        </div>
+        <p class="clashoc-paragraph">Brawl Stars is a fast-paced 3v3 multiplayer battle royal made for mobile gaming. There are various game modes to chose from. Brawl Stars came out on 12/12/2018 and is a super popular game of which you can have fun with friends or you can play solo!</p>
+    </div>
+    <form id="search-form">
+        <label for="player-tag">Enter Player Tag:</label>
+        <input type="text" id="player-tag" name="player-tag" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="player-data"></div>
+
+    <script src="cocapi.js"></script>
+</body>
+</html>    
